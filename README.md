@@ -66,7 +66,7 @@ If you wish to `Uninitialize the repository`, follow below:
 1. Open the folder you wish to, in the Visual Studio Code
 2. Open `bash` terminal
    - selecting `bash` is important as we will use bash command
-3. Run `pwd` to check the current location. This is because `Step 4` cannot be undone.
+3. Run `pwd` to check the current location. This is because step 5. `rm -rf` can never be undone.
 4. Run `git status`
 5. Run `rm -rf .git`
 
