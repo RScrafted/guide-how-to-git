@@ -11,7 +11,7 @@ If some files got accidentally synced to GitHub, you can undo this in a few simp
    This command moves the commit history back by one commit without deleting the changes from your local workspace.
 
 ### 2. **Remove the Unwanted Files**
-   You can now selectively stage files or modify `.gitignore` if needed. If certain files shouldn’t be committed, either remove them or add them to `.gitignore`.
+   You can now selectively stage files or modify `.gitignore` if needed. If certain files shouldn’t be committed, either remove them or add them to `.gitignore`. I prefer this.
 
    - To remove specific files from staging:
      ```bash
