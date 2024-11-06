@@ -1,15 +1,15 @@
 # How to Git - Using Visual Studio Code or Git commands
 
-Hey! I am Rachit. I first learned about it from [Reynald Adolphe](https://www.youtube.com/watch?v=i_23KUAEtUM&t=237s), who succinctly covered the fundamentals in under 7 minutes on.
+Hey! I am Rachit. I first learned about it from [Reynald Adolphe](https://www.youtube.com/watch?v=i_23KUAEtUM), who succinctly covered the fundamentals in under 7 minutes on.
 
 If you prefer following a step-by-step guide, you're in luck. I've crafted four straightforward steps based on my learning experience.
 
- I personally use both methods to keep my skills sharp, though I find Git integrated with Visual Studio Code to be more intuitive. Ultimately, the choice between methods boils down to personal preference, and either option is perfectly fine!
+I personally use both methods to keep my skills sharp, though I find Git integrated with Visual Studio Code to be more intuitive. Ultimately, the choice between methods boils down to personal preference, and either option is perfectly fine!
 
 #### Technical Information
 
-- Visual Studio Code Version: 1.90.0 | [Download](https://code.visualstudio.com/download)
-- `git --version`: git version 2.39.3 (Apple Git-146)
+- Visual Studio Code Version: 1.95.1 --> [Download Reference](https://code.visualstudio.com/download)
+- `git --version`: git version 2.39.5 (Apple Git-154) --> [Installation Reference](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 
 ---
@@ -31,6 +31,7 @@ If you prefer following a step-by-step guide, you're in luck. I've crafted four 
 1. Make changes to your files in the project folder.
 2. In the Source Control panel, you'll see a list of changes. Click the `+` button next to each file you want to include in the commit to stage them.
    - Alternatively, in the terminal, you can use the command `git add .` to stage all changes.
+   - Or use `git add file1.py main.tf` to stage specific files.
 3. Enter a commit message in the text box at the top of the Source Control panel.
 4. Click the checkmark icon to commit the changes.
    - Alternatively, in the terminal, you can use the command `git commit -m "Your commit message"` to commit the changes.
@@ -59,14 +60,19 @@ If you prefer following a step-by-step guide, you're in luck. I've crafted four 
 
 ---
 
-## Bonus Tip
+## Bonus Tip 1
 
 If you wish to `Uninitialize the repository`, follow below:
 1. Open the folder you wish to, in the Visual Studio Code
 2. Open `bash` terminal
-   - selecting `bash` is important
-3. Run `git status`
-4. Run `rm -rf .git`
+   - selecting `bash` is important as we will use bash command
+3. Run `pwd` to check the current location. This is because `Step 4` cannot be undone.
+4. Run `git status`
+5. Run `rm -rf .git`
+
+## Bonus Tip 2
+
+If some files got accidentally synced to GitHub from [Step 2](#step-2-add-and-commit-changes), refer steps to revert [here](revert_accidental_commit.md)
 
 ---
 
